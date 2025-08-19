@@ -25,7 +25,7 @@ const Header: React.FC = () => {
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="text-2xl font-bold bg-gradient-to-r from-marvel-purple-600 via-marvel-pink-500 to-marvel-blue-500 bg-clip-text text-transparent">
-            Marvel Technologies
+            Marvel Technologys
           </div>
 
           {/* Desktop Navigation */}

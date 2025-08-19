@@ -25,7 +25,7 @@ const Hero: React.FC = () => {
             M
           </div>
           <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-marvel-purple-600 via-marvel-pink-500 to-marvel-blue-500 bg-clip-text text-transparent mb-4 leading-tight">
-            Marvel Technologies
+            Marvel Technologys
           </h1>
           <h2 className="text-2xl md:text-3xl bg-gradient-to-r from-marvel-blue-600 to-marvel-purple-600 bg-clip-text text-transparent font-semibold mb-6">
             Innovative AI & Technology Solutions

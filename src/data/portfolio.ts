@@ -66,7 +66,7 @@ export const projects: Project[] = [
   },
   {
     id: '8',
-    title: 'Marvel Technologies Corporate Platform',
+    title: 'Marvel Technologys Corporate Platform',
     description: 'Modern corporate website showcasing our innovative solutions, expertise, and company journey with cutting-edge design and user experience.',
     techStack: ['React', 'TypeScript', 'Tailwind CSS', 'Vite'],
     githubUrl: '#',
@@ -118,8 +118,8 @@ export const skillCategories: SkillCategory[] = [
 export const timeline: TimelineEvent[] = [
   {
     year: '2023',
-    title: 'Marvel Technologies Founded',
-    description: 'Established Marvel Technologies with a vision to revolutionize business through AI and innovative technology solutions.',
+    title: 'Marvel Technologys Founded',
+    description: 'Established Marvel Technologys with a vision to revolutionize business through AI and innovative technology solutions.',
     icon: 'rocket'
   },
   {
