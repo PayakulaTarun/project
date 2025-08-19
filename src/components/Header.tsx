@@ -9,7 +9,7 @@ const Header: React.FC = () => {
   const navItems = [
     { href: '#home', label: 'Home' },
     { href: '#about', label: 'About' },
-    { href: '#projects', label: 'Projects' },
+    { href: '#projects', label: 'Services' },
     { href: '#skills', label: 'Skills' },
     { href: '#journey', label: 'Journey' },
     { href: '#contact', label: 'Contact' }
@@ -24,8 +24,11 @@ const Header: React.FC = () => {
     <header className="fixed top-0 w-full bg-white/90 dark:bg-gray-900/90 backdrop-blur-md z-50 border-b border-marvel-purple-200 dark:border-marvel-purple-700">
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="text-2xl font-bold bg-gradient-to-r from-marvel-purple-600 via-marvel-pink-500 to-marvel-blue-500 bg-clip-text text-transparent">
-            Marvel Technologys
+          <div className="flex items-center space-x-3">
+            <img src="/logo.jpg" alt="Marvel Technologys" className="h-10 w-10 rounded-lg" />
+            <div className="text-2xl font-bold bg-gradient-to-r from-marvel-purple-600 via-marvel-pink-500 to-marvel-blue-500 bg-clip-text text-transparent">
+              Marvel Technologys
+            </div>
           </div>
 
           {/* Desktop Navigation */}

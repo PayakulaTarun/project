@@ -21,8 +21,8 @@ const Hero: React.FC = () => {
       
       <div className="container mx-auto px-6 text-center">
         <div className="mb-8">
-          <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-marvel-purple-600 via-marvel-pink-500 to-marvel-blue-500 flex items-center justify-center text-4xl font-bold text-white shadow-2xl animate-float">
-            M
+          <div className="w-32 h-32 mx-auto mb-6 rounded-full shadow-2xl animate-float overflow-hidden">
+            <img src="/logo.jpg" alt="Marvel Technologys" className="w-full h-full object-cover" />
           </div>
           <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-marvel-purple-600 via-marvel-pink-500 to-marvel-blue-500 bg-clip-text text-transparent mb-4 leading-tight">
             Marvel Technologys
@@ -41,7 +41,7 @@ const Hero: React.FC = () => {
             onClick={scrollToProjects}
             className="px-8 py-4 bg-gradient-to-r from-marvel-purple-600 to-marvel-pink-600 text-white rounded-full font-semibold hover:from-marvel-purple-700 hover:to-marvel-pink-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl"
           >
-            View Our Solutions
+            View Our Services
           </button>
           <button
             onClick={scrollToContact}
@@ -52,14 +52,6 @@ const Hero: React.FC = () => {
         </div>
 
         <div className="flex justify-center space-x-6 mb-12">
-          <a
-            href="https://github.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="p-3 bg-white dark:bg-gray-800 rounded-full shadow-lg hover:shadow-xl transform hover:scale-110 transition-all duration-300 hover:bg-gradient-to-r hover:from-marvel-purple-100 hover:to-marvel-pink-100"
-          >
-            <Github size={24} className="text-marvel-purple-600 dark:text-marvel-purple-400" />
-          </a>
           <a
             href="https://linkedin.com"
             target="_blank"

@@ -3,72 +3,72 @@ import { Project, SkillCategory, TimelineEvent } from '../types';
 export const projects: Project[] = [
   {
     id: '1',
-    title: 'Enterprise AI Tutor Platform (Sahayak)',
-    description: 'Revolutionary intelligent tutoring platform delivering personalized learning experiences through advanced AI algorithms and machine learning.',
-    techStack: ['React', 'Node.js', 'MongoDB', 'AI/ML', 'Firebase'],
+    title: 'Custom Software Development',
+    description: 'End-to-end custom software solutions tailored to your business needs, from web applications to enterprise systems with modern technologies.',
+    techStack: ['React', 'Node.js', 'Python', 'Java', '.NET'],
     githubUrl: '#',
     demoUrl: '#',
     featured: true
   },
   {
     id: '2',
-    title: 'Smart Transportation AI Solution',
-    description: 'Enterprise-grade AI-powered complaint management and optimization system with intelligent routing, predictive analytics, and automated resolution.',
-    techStack: ['Python', 'TensorFlow', 'React', 'Flask', 'MongoDB'],
+    title: 'Mobile App Development',
+    description: 'Native and cross-platform mobile applications for iOS and Android with intuitive user experiences and robust functionality.',
+    techStack: ['Flutter', 'React Native', 'Swift', 'Kotlin'],
     githubUrl: '#',
     demoUrl: '#',
     featured: true
   },
   {
     id: '3',
-    title: 'Agricultural AI Vision Platform',
-    description: 'Advanced computer vision platform leveraging deep learning models for precision agriculture, disease detection, and crop optimization.',
-    techStack: ['Python', 'TensorFlow', 'OpenCV', 'React', 'Flask'],
+    title: 'Web Development & Design',
+    description: 'Responsive websites and web applications with modern UI/UX design, optimized for performance and user engagement.',
+    techStack: ['React', 'Angular', 'Vue.js', 'HTML5', 'CSS3'],
     githubUrl: '#',
     demoUrl: '#',
     featured: true
   },
   {
     id: '4',
-    title: 'Enterprise AI Chatbot Platform',
-    description: 'Sophisticated conversational AI platform with advanced NLP capabilities, multi-language support, and enterprise-grade customer service automation.',
-    techStack: ['React', 'Node.js', 'NLP APIs', 'Socket.io'],
+    title: 'AI & Machine Learning Solutions',
+    description: 'Intelligent automation, predictive analytics, and AI-powered solutions to transform your business operations and decision-making.',
+    techStack: ['Python', 'TensorFlow', 'PyTorch', 'Scikit-learn'],
     githubUrl: '#',
     demoUrl: '#',
     featured: true
   },
   {
     id: '5',
-    title: 'Advanced Sentiment Analytics Suite',
-    description: 'Real-time sentiment analysis platform with advanced emotional intelligence, brand monitoring, and predictive market insights.',
-    techStack: ['React', 'Python', 'Scikit-learn', 'REST APIs'],
+    title: 'Cloud Services & DevOps',
+    description: 'Cloud migration, infrastructure management, CI/CD pipelines, and DevOps solutions for scalable and reliable applications.',
+    techStack: ['AWS', 'Azure', 'Docker', 'Kubernetes', 'Jenkins'],
     githubUrl: '#',
     demoUrl: '#',
     featured: true
   },
   {
     id: '6',
-    title: 'Enterprise Learning Management System',
-    description: 'Comprehensive learning platform with adaptive assessments, real-time analytics, gamification, and enterprise-grade user management.',
-    techStack: ['HTML', 'CSS', 'JavaScript', 'Firebase'],
+    title: 'Database Design & Management',
+    description: 'Database architecture, optimization, and management services ensuring data integrity, security, and high performance.',
+    techStack: ['MySQL', 'PostgreSQL', 'MongoDB', 'Redis'],
     githubUrl: '#',
     demoUrl: '#',
     featured: true
   },
   {
     id: '7',
-    title: 'Marvel Mobile Solutions Suite',
-    description: 'Cross-platform mobile application suite delivering AI-driven business solutions, EdTech innovations, and enterprise mobility.',
-    techStack: ['Flutter', 'Node.js', 'MongoDB', 'Firebase'],
+    title: 'E-commerce Solutions',
+    description: 'Complete e-commerce platforms with payment integration, inventory management, and customer relationship management systems.',
+    techStack: ['Shopify', 'WooCommerce', 'Magento', 'React'],
     githubUrl: '#',
     demoUrl: '#',
     featured: true
   },
   {
     id: '8',
-    title: 'Marvel Technologys Corporate Platform',
-    description: 'Modern corporate website showcasing our innovative solutions, expertise, and company journey with cutting-edge design and user experience.',
-    techStack: ['React', 'TypeScript', 'Tailwind CSS', 'Vite'],
+    title: 'IT Consulting & Support',
+    description: 'Strategic IT consulting, system integration, technical support, and digital transformation guidance for businesses.',
+    techStack: ['System Analysis', 'Architecture', 'Integration'],
     githubUrl: '#',
     demoUrl: '#',
     featured: true
@@ -109,7 +109,7 @@ export const skillCategories: SkillCategory[] = [
     skills: [
       { name: 'TensorFlow', level: 65, icon: 'brain' },
       { name: 'Scikit-learn', level: 70, icon: 'brain' },
-      { name: 'Git/GitHub', level: 85, icon: 'git-branch' },
+      { name: 'REST APIs', level: 85, icon: 'zap' },
       { name: 'Postman', level: 80, icon: 'zap' }
     ]
   }

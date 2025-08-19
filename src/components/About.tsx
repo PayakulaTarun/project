@@ -7,7 +7,7 @@ const About: React.FC = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-            About Marvel Technologies
+            About Marvel Technologys
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             A cutting-edge technology company on a mission to create impactful AI-driven solutions
@@ -80,19 +80,19 @@ const About: React.FC = () => {
             <div className="space-y-4">
               <div className="flex justify-between items-center">
                 <span className="text-gray-600 dark:text-gray-300">Solutions Delivered</span>
-                <span className="font-bold text-marvel-purple-600 dark:text-marvel-purple-400">50+</span>
+                <span className="font-bold text-marvel-purple-600 dark:text-marvel-purple-400">25+</span>
               </div>
               <div className="flex justify-between items-center">
                 <span className="text-gray-600 dark:text-gray-300">Technologies Mastered</span>
-                <span className="font-bold text-marvel-pink-600 dark:text-marvel-pink-400">30+</span>
+                <span className="font-bold text-marvel-pink-600 dark:text-marvel-pink-400">37+</span>
               </div>
               <div className="flex justify-between items-center">
                 <span className="text-gray-600 dark:text-gray-300">AI/ML Projects</span>
-                <span className="font-bold text-marvel-blue-600 dark:text-marvel-blue-400">25+</span>
+                <span className="font-bold text-marvel-blue-600 dark:text-marvel-blue-400">19+</span>
               </div>
               <div className="flex justify-between items-center">
                 <span className="text-gray-600 dark:text-gray-300">Happy Clients</span>
-                <span className="font-bold bg-gradient-to-r from-marvel-purple-600 to-marvel-pink-600 bg-clip-text text-transparent">100+</span>
+                <span className="font-bold bg-gradient-to-r from-marvel-purple-600 to-marvel-pink-600 bg-clip-text text-transparent">87+</span>
               </div>
             </div>
 

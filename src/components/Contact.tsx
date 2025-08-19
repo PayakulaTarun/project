@@ -49,7 +49,7 @@ const Contact: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900 dark:text-white">Email</h4>
-                  <p className="text-gray-600 dark:text-gray-300">contact@marveltechnologies.com</p>
+                  <p className="text-gray-600 dark:text-gray-300">marveltechnologiesinfo@gmail.com</p>
                 </div>
               </div>
 
@@ -59,7 +59,7 @@ const Contact: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900 dark:text-white">Phone</h4>
-                  <p className="text-gray-600 dark:text-gray-300">+1 (555) 123-4567</p>
+                  <p className="text-gray-600 dark:text-gray-300">+91 7337312325</p>
                 </div>
               </div>
 
@@ -77,14 +77,6 @@ const Contact: React.FC = () => {
             <div className="pt-8">
               <h4 className="font-semibold text-gray-900 dark:text-white mb-4">Follow Us</h4>
               <div className="flex space-x-4">
-                <a
-                  href="https://github.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-3 bg-marvel-purple-100 dark:bg-marvel-purple-800 rounded-lg hover:bg-marvel-purple-200 dark:hover:bg-marvel-purple-700 transition-colors"
-                >
-                  <Github size={24} className="text-marvel-purple-600 dark:text-marvel-purple-300" />
-                </a>
                 <a
                   href="https://linkedin.com"
                   target="_blank"

@@ -8,10 +8,10 @@ const Projects: React.FC = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-            Our Solutions
+            Our Services
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Cutting-edge technology solutions that drive business transformation and innovation
+            Professional software development services that drive business transformation and innovation
           </p>
         </div>
 
@@ -48,46 +48,13 @@ const Projects: React.FC = () => {
                   ))}
                 </div>
 
-                <div className="flex space-x-4">
-                  {project.githubUrl && (
-                    <a
-                      href={project.githubUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center space-x-2 px-4 py-2 bg-marvel-purple-100 dark:bg-marvel-purple-800 text-marvel-purple-700 dark:text-marvel-purple-300 rounded-lg hover:bg-marvel-purple-200 dark:hover:bg-marvel-purple-700 transition-colors"
-                    >
-                      <Github size={16} />
-                      <span>Code</span>
-                    </a>
-                  )}
-                  {project.demoUrl && (
-                    <a
-                      href={project.demoUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center space-x-2 px-4 py-2 bg-gradient-to-r from-marvel-pink-600 to-marvel-blue-600 text-white rounded-lg hover:from-marvel-pink-700 hover:to-marvel-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl"
-                    >
-                      <ExternalLink size={16} />
-                      <span>Live Demo</span>
-                    </a>
-                  )}
-                </div>
+
               </div>
             </div>
           ))}
         </div>
 
-        <div className="text-center mt-12">
-          <a
-            href="https://github.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center space-x-2 px-6 py-3 border-2 border-marvel-purple-600 bg-gradient-to-r from-marvel-purple-600 to-marvel-pink-600 bg-clip-text text-transparent rounded-lg hover:bg-gradient-to-r hover:from-marvel-purple-600 hover:to-marvel-pink-600 hover:text-white transition-all duration-300"
-          >
-            <Github size={20} />
-            <span>View All Solutions on GitHub</span>
-          </a>
-        </div>
+
       </div>
     </section>
   );
