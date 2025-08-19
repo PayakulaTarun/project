@@ -1,25 +1,35 @@
-import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Send, Github, Linkedin, MessageCircle } from 'lucide-react';
+import React, { useState } from "react";
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Send,
+  Github,
+  Linkedin,
+  MessageCircle,
+} from "lucide-react";
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle form submission here
-    alert('Thank you for your message! I\'ll get back to you soon.');
-    setFormData({ name: '', email: '', subject: '', message: '' });
+    alert("Thank you for your message! I'll get back to you soon.");
+    setFormData({ name: "", email: "", subject: "", message: "" });
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
@@ -31,7 +41,8 @@ const Contact: React.FC = () => {
             Contact Marvel Technologies
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Ready to transform your business? Let's discuss how our innovative solutions can drive your success
+            Ready to transform your business? Let's discuss how our innovative
+            solutions can drive your success
           </p>
         </div>
 
@@ -41,41 +52,64 @@ const Contact: React.FC = () => {
             <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6">
               Get In Touch
             </h3>
-            
+
             <div className="space-y-6">
               <div className="flex items-center space-x-4">
                 <div className="p-3 bg-gradient-to-br from-marvel-purple-100 to-marvel-pink-100 dark:from-marvel-purple-900 dark:to-marvel-pink-900 rounded-lg">
-                  <Mail size={24} className="text-marvel-purple-600 dark:text-marvel-purple-400" />
+                  <Mail
+                    size={24}
+                    className="text-marvel-purple-600 dark:text-marvel-purple-400"
+                  />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-white">Email</h4>
-                  <p className="text-gray-600 dark:text-gray-300">marveltechnologiesinfo@gmail.com</p>
+                  <h4 className="font-semibold text-gray-900 dark:text-white">
+                    Email
+                  </h4>
+                  <p className="text-gray-600 dark:text-gray-300">
+                    info@marveltechnologys.in
+                  </p>
                 </div>
               </div>
 
               <div className="flex items-center space-x-4">
                 <div className="p-3 bg-gradient-to-br from-marvel-pink-100 to-marvel-blue-100 dark:from-marvel-pink-900 dark:to-marvel-blue-900 rounded-lg">
-                  <Phone size={24} className="text-marvel-pink-600 dark:text-marvel-pink-400" />
+                  <Phone
+                    size={24}
+                    className="text-marvel-pink-600 dark:text-marvel-pink-400"
+                  />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-white">Phone</h4>
-                  <p className="text-gray-600 dark:text-gray-300">+91 7337312325</p>
+                  <h4 className="font-semibold text-gray-900 dark:text-white">
+                    Phone
+                  </h4>
+                  <p className="text-gray-600 dark:text-gray-300">
+                    +91 7337312325
+                  </p>
                 </div>
               </div>
 
               <div className="flex items-center space-x-4">
                 <div className="p-3 bg-gradient-to-br from-marvel-blue-100 to-marvel-purple-100 dark:from-marvel-blue-900 dark:to-marvel-purple-900 rounded-lg">
-                  <MapPin size={24} className="text-marvel-blue-600 dark:text-marvel-blue-400" />
+                  <MapPin
+                    size={24}
+                    className="text-marvel-blue-600 dark:text-marvel-blue-400"
+                  />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-white">Location</h4>
-                  <p className="text-gray-600 dark:text-gray-300">Silicon Valley, CA</p>
+                  <h4 className="font-semibold text-gray-900 dark:text-white">
+                    Location
+                  </h4>
+                  <p className="text-gray-600 dark:text-gray-300">
+                    Andhra Pradesh, India
+                  </p>
                 </div>
               </div>
             </div>
 
             <div className="pt-8">
-              <h4 className="font-semibold text-gray-900 dark:text-white mb-4">Follow Us</h4>
+              <h4 className="font-semibold text-gray-900 dark:text-white mb-4">
+                Follow Us
+              </h4>
               <div className="flex space-x-4">
                 <a
                   href="https://linkedin.com"
@@ -83,7 +117,10 @@ const Contact: React.FC = () => {
                   rel="noopener noreferrer"
                   className="p-3 bg-marvel-pink-100 dark:bg-marvel-pink-800 rounded-lg hover:bg-marvel-pink-200 dark:hover:bg-marvel-pink-700 transition-colors"
                 >
-                  <Linkedin size={24} className="text-marvel-pink-600 dark:text-marvel-pink-300" />
+                  <Linkedin
+                    size={24}
+                    className="text-marvel-pink-600 dark:text-marvel-pink-300"
+                  />
                 </a>
                 <a
                   href="https://wa.me/"
@@ -91,7 +128,10 @@ const Contact: React.FC = () => {
                   rel="noopener noreferrer"
                   className="p-3 bg-marvel-blue-100 dark:bg-marvel-blue-800 rounded-lg hover:bg-marvel-blue-200 dark:hover:bg-marvel-blue-700 transition-colors"
                 >
-                  <MessageCircle size={24} className="text-marvel-blue-600 dark:text-marvel-blue-300" />
+                  <MessageCircle
+                    size={24}
+                    className="text-marvel-blue-600 dark:text-marvel-blue-300"
+                  />
                 </a>
               </div>
             </div>
@@ -101,7 +141,10 @@ const Contact: React.FC = () => {
           <div className="bg-gradient-to-br from-marvel-purple-50 to-marvel-pink-50 dark:from-gray-800 dark:to-marvel-purple-900 p-8 rounded-xl border border-marvel-purple-200 dark:border-marvel-purple-700">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                <label
+                  htmlFor="name"
+                  className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+                >
                   Name
                 </label>
                 <input
@@ -117,7 +160,10 @@ const Contact: React.FC = () => {
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+                >
                   Email
                 </label>
                 <input
@@ -133,7 +179,10 @@ const Contact: React.FC = () => {
               </div>
 
               <div>
-                <label htmlFor="subject" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                <label
+                  htmlFor="subject"
+                  className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+                >
                   Subject
                 </label>
                 <input
@@ -149,7 +198,10 @@ const Contact: React.FC = () => {
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+                >
                   Message
                 </label>
                 <textarea
