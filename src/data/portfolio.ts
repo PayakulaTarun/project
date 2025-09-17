@@ -3,9 +3,9 @@ import { Project, SkillCategory, TimelineEvent } from '../types';
 export const projects: Project[] = [
   {
     id: '1',
-    title: 'Custom Software Development',
-    description: 'End-to-end custom software solutions tailored to your business needs, from web applications to enterprise systems with modern technologies.',
-    techStack: ['React', 'Node.js', 'Python', 'Java', '.NET'],
+    title: 'Enterprise Software Solutions',
+    description: 'Comprehensive enterprise-grade software development including ERP systems, CRM platforms, and business process automation tools designed for scalability and performance.',
+    techStack: ['React', 'Node.js', 'Python', 'Java', '.NET', 'Microservices'],
     githubUrl: '#',
     demoUrl: '#',
     featured: true
@@ -31,8 +31,8 @@ export const projects: Project[] = [
   {
     id: '4',
     title: 'AI & Machine Learning Solutions',
-    description: 'Intelligent automation, predictive analytics, and AI-powered solutions to transform your business operations and decision-making.',
-    techStack: ['Python', 'TensorFlow', 'PyTorch', 'Scikit-learn'],
+    description: 'Advanced AI solutions including natural language processing, computer vision, predictive analytics, and intelligent automation systems for business transformation.',
+    techStack: ['Python', 'TensorFlow', 'PyTorch', 'OpenAI', 'Azure AI', 'AWS ML'],
     githubUrl: '#',
     demoUrl: '#',
     featured: true
@@ -66,9 +66,27 @@ export const projects: Project[] = [
   },
   {
     id: '8',
-    title: 'IT Consulting & Support',
-    description: 'Strategic IT consulting, system integration, technical support, and digital transformation guidance for businesses.',
-    techStack: ['System Analysis', 'Architecture', 'Integration'],
+    title: 'Digital Transformation Consulting',
+    description: 'Strategic IT consulting, digital transformation roadmaps, system modernization, and technology advisory services to accelerate business growth.',
+    techStack: ['Strategy', 'Architecture', 'Cloud Migration', 'Process Optimization'],
+    githubUrl: '#',
+    demoUrl: '#',
+    featured: true
+  },
+  {
+    id: '9',
+    title: 'Cybersecurity Solutions',
+    description: 'Comprehensive cybersecurity services including security audits, penetration testing, compliance management, and threat detection systems.',
+    techStack: ['Security Frameworks', 'Penetration Testing', 'Compliance', 'Monitoring'],
+    githubUrl: '#',
+    demoUrl: '#',
+    featured: true
+  },
+  {
+    id: '10',
+    title: 'Data Analytics & Business Intelligence',
+    description: 'Advanced data analytics platforms, business intelligence dashboards, and data visualization solutions for informed decision-making.',
+    techStack: ['Power BI', 'Tableau', 'Python', 'SQL', 'Apache Spark'],
     githubUrl: '#',
     demoUrl: '#',
     featured: true
@@ -117,33 +135,51 @@ export const skillCategories: SkillCategory[] = [
 
 export const timeline: TimelineEvent[] = [
   {
+    year: '2022',
+    title: 'Company Inception',
+    description: 'Marvel Technologys was conceptualized with a mission to bridge the gap between cutting-edge technology and practical business solutions.',
+    icon: 'lightbulb'
+  },
+  {
     year: '2023',
-    title: 'Marvel Technologys Founded',
-    description: 'Established Marvel Technologys with a vision to revolutionize business through AI and innovative technology solutions.',
+    title: 'Official Launch',
+    description: 'Officially launched Marvel Technologys with a core team of experienced developers and AI specialists, establishing our first client partnerships.',
     icon: 'rocket'
   },
   {
-    year: '2024',
-    title: 'AI Innovation Breakthrough',
-    description: 'Launched our first suite of AI-powered solutions including advanced sentiment analysis and computer vision platforms.',
-    icon: 'brain'
-  },
-  {
-    year: '2024-Q4',
-    title: 'Enterprise Expansion',
-    description: 'Expanded into enterprise solutions with our flagship AI Tutor Platform and Smart Transportation systems.',
+    year: '2024-Q1',
+    title: 'Service Portfolio Expansion',
+    description: 'Expanded our service offerings to include comprehensive digital transformation consulting and enterprise software solutions.',
     icon: 'building'
   },
   {
-    year: '2025-Present',
-    title: 'Technology Leadership',
-    description: 'Leading the industry with comprehensive full-stack solutions, mobile platforms, and next-generation AI implementations.',
-    icon: 'code'
+    year: '2024-Q2',
+    title: 'AI Innovation Breakthrough',
+    description: 'Successfully deployed our first AI-powered business intelligence platform and launched advanced machine learning consulting services.',
+    icon: 'brain'
   },
   {
-    year: 'Future',
-    title: 'Global Innovation',
-    description: 'Pioneering quantum computing integration, advanced data science solutions, and scalable AI products impacting millions worldwide.',
-    icon: 'target'
+    year: '2024-Q3',
+    title: 'Strategic Partnerships',
+    description: 'Formed key partnerships with leading cloud providers and technology vendors to enhance our service delivery capabilities.',
+    icon: 'handshake'
+  },
+  {
+    year: '2024-Q4',
+    title: 'Enterprise Client Acquisition',
+    description: 'Successfully onboarded major enterprise clients and delivered complex digital transformation projects across multiple industries.',
+    icon: 'trophy'
+  },
+  {
+    year: '2025-Present',
+    title: 'Market Leadership',
+    description: 'Established as a trusted technology partner with a proven track record of delivering innovative solutions and maintaining 98% client satisfaction.',
+    icon: 'star'
+  },
+  {
+    year: '2025-Future',
+    title: 'Global Expansion',
+    description: 'Planning international expansion with offices in key markets, focusing on emerging technologies like quantum computing and advanced AI research.',
+    icon: 'globe'
   }
 ];
