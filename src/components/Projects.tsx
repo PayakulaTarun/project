@@ -65,7 +65,7 @@ const Projects: React.FC = () => {
 
   const whyChooseUs = [
     { title: 'Expert Team', description: 'Our team consists of experienced professionals with deep expertise in their respective fields.' },
-    { title: 'Proven Track Record', description: 'With 50+ successful projects and 1+ years of experience, we deliver results.' },
+    { title: 'Proven Track Record', description: 'With 19+ successful projects and 1+ years of experience, we deliver results.' },
     { title: 'Latest Technologies', description: 'We stay updated with the latest trends and technologies to provide cutting-edge solutions.' },
     { title: '24/7 Support', description: 'Our dedicated support team is available round-the-clock to assist you.' }
   ];
