@@ -1,18 +1,19 @@
 import React, { useState } from 'react';
 import { Menu, X, Sun, Moon } from 'lucide-react';
+import { Link, useLocation } from 'react-router-dom';
 import { useTheme } from '../contexts/ThemeContext';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { theme, toggleTheme } = useTheme();
+  const location = useLocation();
 
   const navItems = [
-    { href: '#home', label: 'Home' },
-    { href: '#about', label: 'About' },
-    { href: '#projects', label: 'Services' },
-    { href: '#skills', label: 'Skills' },
-    { href: '#journey', label: 'Journey' },
-    { href: '#contact', label: 'Contact' }
+    { href: '/', label: 'Home' },
+    { href: '/about', label: 'About Us' },
+    { href: '/services', label: 'Services' },
+    { href: '/portfolio', label: 'Portfolio' },
+    { href: '/contact', label: 'Contact Us' }
   ];
 
 
@@ -31,13 +32,15 @@ const Header: React.FC = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.href}
-                href={item.href}
-                className="text-gray-600 dark:text-gray-300 hover:text-marvel-purple-600 dark:hover:text-marvel-purple-400 transition-colors"
+                to={item.href}
+                className={`text-gray-600 dark:text-gray-300 hover:text-marvel-purple-600 dark:hover:text-marvel-purple-400 transition-colors ${
+                  location.pathname === item.href ? 'text-marvel-purple-600 dark:text-marvel-purple-400 font-semibold' : ''
+                }`}
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
           </div>
 
@@ -64,14 +67,16 @@ const Header: React.FC = () => {
         {isMenuOpen && (
           <div className="md:hidden mt-4 py-4 space-y-4 border-t border-gray-200 dark:border-gray-700">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.href}
-                href={item.href}
-                className="block text-gray-600 dark:text-gray-300 hover:text-marvel-purple-600 dark:hover:text-marvel-purple-400 transition-colors"
+                to={item.href}
+                className={`block text-gray-600 dark:text-gray-300 hover:text-marvel-purple-600 dark:hover:text-marvel-purple-400 transition-colors ${
+                  location.pathname === item.href ? 'text-marvel-purple-600 dark:text-marvel-purple-400 font-semibold' : ''
+                }`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
             <div className="pt-4">
               <button

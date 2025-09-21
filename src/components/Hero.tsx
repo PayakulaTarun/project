@@ -1,13 +1,16 @@
 import React from "react";
 import { ChevronDown, Github, Linkedin, Mail } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const Hero: React.FC = () => {
-  const scrollToProjects = () => {
-    document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
+  const navigate = useNavigate();
+
+  const goToServices = () => {
+    navigate("/services");
   };
 
-  const scrollToContact = () => {
-    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+  const goToContact = () => {
+    navigate("/contact");
   };
 
   return (
@@ -28,40 +31,72 @@ const Hero: React.FC = () => {
         ></div>
       </div>
 
-      <div className="container mx-auto px-6 text-center">
+      <div className="container mx-auto px-6 text-center relative z-10">
         <div className="mb-8">
           {/*<div className="w-32 h-32 mx-auto mb-6 rounded-full shadow-2xl animate-float overflow-hidden">
             <img src="/logo.jpg" alt="Marvel Technologys" className="w-full h-full object-cover" />
           </div>*/}
-          <h1 className="text-5xl md:text-7xl font-bold   bg-gradient-to-r from-marvel-purple-600 via-marvel-pink-500 to-marvel-blue-500   bg-clip-text text-transparent   mb-8 leading-tight   pt-16 pb-3">
+          <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-marvel-purple-600 via-marvel-pink-500 to-marvel-blue-500 bg-clip-text text-transparent mb-12 leading-relaxed pt-24 pb-4">
             Marvel Technologys
           </h1>
           <h2 className="text-2xl md:text-3xl bg-gradient-to-r from-marvel-blue-600 to-marvel-purple-600 bg-clip-text text-transparent font-semibold mb-6">
-            Innovative AI & Technology Solutions
+            Transforming Ideas into Digital Reality
           </h2>
           <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-8 leading-relaxed">
-            We're a cutting-edge technology company specializing in Artificial
-            Intelligence, Full Stack Development, and innovative solutions that
-            transform businesses and lives.
+            We deliver cutting-edge technology solutions that drive business
+            growth and digital transformation. Your success is our mission.
           </p>
         </div>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
           <button
-            onClick={scrollToProjects}
+            onClick={goToServices}
             className="px-8 py-4 bg-gradient-to-r from-marvel-purple-600 to-marvel-pink-600 text-white rounded-full font-semibold hover:from-marvel-purple-700 hover:to-marvel-pink-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl"
           >
-            View Our Services
+            Our Services
           </button>
-          <button
-            onClick={scrollToContact}
-            className="px-8 py-4 border-2 border-marvel-blue-500 bg-gradient-to-r from-marvel-blue-600 to-marvel-purple-600 bg-clip-text text-transparent rounded-full font-semibold hover:bg-gradient-to-r hover:from-marvel-blue-600 hover:to-marvel-purple-600 hover:text-white transform hover:scale-105 transition-all duration-300"
-          >
-            Get in Touch
+          <button className="px-8 py-4 border-2 border-marvel-blue-500 text-marvel-blue-600 dark:text-marvel-blue-400 rounded-full font-semibold hover:bg-marvel-blue-600 hover:text-white transform hover:scale-105 transition-all duration-300">
+            Watch Demo
           </button>
         </div>
 
-        <div className="flex justify-center space-x-6 mb-12">
+        {/* Stats Section */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
+          <div className="text-center">
+            <div className="text-3xl md:text-4xl font-bold text-marvel-purple-600 dark:text-marvel-purple-400 mb-2">
+              13+
+            </div>
+            <div className="text-gray-600 dark:text-gray-300 font-medium">
+              Happy Clients
+            </div>
+          </div>
+          <div className="text-center">
+            <div className="text-3xl md:text-4xl font-bold text-marvel-pink-600 dark:text-marvel-pink-400 mb-2">
+              19+
+            </div>
+            <div className="text-gray-600 dark:text-gray-300 font-medium">
+              Projects Completed
+            </div>
+          </div>
+          <div className="text-center">
+            <div className="text-3xl md:text-4xl font-bold text-marvel-blue-600 dark:text-marvel-blue-400 mb-2">
+              1+
+            </div>
+            <div className="text-gray-600 dark:text-gray-300 font-medium">
+              Years Experience
+            </div>
+          </div>
+          <div className="text-center">
+            <div className="text-3xl md:text-4xl font-bold text-marvel-purple-600 dark:text-marvel-purple-400 mb-2">
+              99%
+            </div>
+            <div className="text-gray-600 dark:text-gray-300 font-medium">
+              Success Rate
+            </div>
+          </div>
+        </div>
+
+        <div className="flex justify-center space-x-6">
           <a
             href="https://linkedin.com"
             target="_blank"
@@ -82,13 +117,6 @@ const Hero: React.FC = () => {
               className="text-marvel-blue-600 dark:text-marvel-blue-400"
             />
           </a>
-        </div>
-
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <ChevronDown
-            size={32}
-            className="text-marvel-purple-400 dark:text-marvel-purple-600"
-          />
         </div>
       </div>
     </section>

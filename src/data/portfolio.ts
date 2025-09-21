@@ -135,51 +135,39 @@ export const skillCategories: SkillCategory[] = [
 
 export const timeline: TimelineEvent[] = [
   {
-    year: '2022',
-    title: 'Company Inception',
-    description: 'Marvel Technologys was conceptualized with a mission to bridge the gap between cutting-edge technology and practical business solutions.',
-    icon: 'lightbulb'
-  },
-  {
-    year: '2023',
-    title: 'Official Launch',
-    description: 'Officially launched Marvel Technologys with a core team of experienced developers and AI specialists, establishing our first client partnerships.',
+    year: '2025',
+    title: 'Company Founded',
+    description: 'Marvel Technologys was founded with a mission to transform businesses through innovative technology solutions.',
     icon: 'rocket'
   },
   {
-    year: '2024-Q1',
-    title: 'Service Portfolio Expansion',
-    description: 'Expanded our service offerings to include comprehensive digital transformation consulting and enterprise software solutions.',
-    icon: 'building'
-  },
-  {
-    year: '2024-Q2',
-    title: 'AI Innovation Breakthrough',
-    description: 'Successfully deployed our first AI-powered business intelligence platform and launched advanced machine learning consulting services.',
-    icon: 'brain'
-  },
-  {
-    year: '2024-Q3',
-    title: 'Strategic Partnerships',
-    description: 'Formed key partnerships with leading cloud providers and technology vendors to enhance our service delivery capabilities.',
-    icon: 'handshake'
-  },
-  {
-    year: '2024-Q4',
-    title: 'Enterprise Client Acquisition',
-    description: 'Successfully onboarded major enterprise clients and delivered complex digital transformation projects across multiple industries.',
+    year: '2025-Q2',
+    title: 'First Major Client',
+    description: 'Successfully delivered our first enterprise-level project and established core service offerings.',
     icon: 'trophy'
   },
   {
-    year: '2025-Present',
-    title: 'Market Leadership',
-    description: 'Established as a trusted technology partner with a proven track record of delivering innovative solutions and maintaining 98% client satisfaction.',
+    year: '2025-Q3',
+    title: 'Team Expansion',
+    description: 'Growing team of talented professionals across web development, mobile apps, and digital marketing.',
+    icon: 'building'
+  },
+  {
+    year: '2025-Q4',
+    title: 'Service Portfolio Launch',
+    description: 'Launched comprehensive suite of technology services including AI solutions and cloud services.',
     icon: 'star'
   },
   {
-    year: '2025-Future',
-    title: 'Global Expansion',
-    description: 'Planning international expansion with offices in key markets, focusing on emerging technologies like quantum computing and advanced AI research.',
+    year: '2026',
+    title: 'Innovation Focus',
+    description: 'Planned expansion into advanced AI technologies and emerging tech solutions.',
+    icon: 'brain'
+  },
+  {
+    year: 'Future',
+    title: 'Global Vision',
+    description: 'Aiming to serve clients worldwide with cutting-edge technology solutions and digital transformation services.',
     icon: 'globe'
   }
 ];
